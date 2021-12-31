@@ -1,0 +1,419 @@
+<!--Page Title-->
+<section
+  class="page-title centred"
+  style="
+    background-image: url(../../../../assets/images/background/page-title.jpg);
+  "
+>
+  <div class="container">
+    <div class="content-box">
+      <h1>Students</h1>
+      <ul class="bread-crumb clearfix">
+        <li><a routerLink="/home">Home</a></li>
+        <li>Students</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!-- class-details -->
+<section class="class-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 content-side">
+        <div class="class-details-content">
+          <div class="inner-box">
+            <div class="upper-content">
+              <div class="sec-title style-two">
+                <h5>Description</h5>
+                <h1>HOMESCHOOLING</h1>
+              </div>
+              <div class="bold-text">
+                Kids who are in school just visit life sometimes, and then they
+                have to stop to do homework or go to sleep early or get to
+                school on time. They are constantly reminded they are preparing
+                for real life,” while being isolated from it.
+              </div>
+              <div class="bold-text">
+                Homeschooling allows you the freedom to step off the highway of
+                learning and take a more scenic route along a dirt road.
+              </div>
+            </div>
+            <div class="lower-content">
+              <h3>THE LEARNING HUB, Presents, HOMESCHOOLING</h3>
+              <ul class="list">
+                <li>Worried about your child wasting Time</li>
+                <li>
+                  Child unable to learn due to lack of attention on online class
+                </li>
+                <li>Non-Effective Online Classes</li>
+                <li>Closed Schools</li>
+              </ul>
+              <figure class="image-box">
+                <img src="images/resource/class-details.jpg" alt="" />
+              </figure>
+              <h3>
+                Hundreds of families have benefitted from our in-person
+                programme. For the first time Guaranteed Learning.
+              </h3>
+
+              <ul class="list list-success">
+                <li>Your child learns the best way possible</li>
+                <li>In-person Attention</li>
+                <li>Learn from Home.</li>
+                <li>Fully Vaccinated Teacher.</li>
+                <li>Regular COVID Tests</li>
+                <li>
+                  Most Innovative Learning Curriculum for the overall
+                  development of your child.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
+        <div class="sec-title style-two">
+          <h5>Mid-Term Admissions are open for</h5>
+        </div>
+        <div class="class-details-sidebar">
+          <div class="inner-box">
+            <h3>Playgroups</h3>
+            <div class="text">
+              Our Preschool program offers children a wide variety of learning
+              opportunities. The curriculum allows children to explore the world
+              they live in with the safety and support of great teachers.
+            </div>
+            <ul class="info-list">
+              <li>
+                <h5>Age Group:</h5>
+                <span>2 to 3 years old</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="class-details-sidebar mt-5">
+          <div class="inner-box">
+            <h3>Nursery</h3>
+            <div class="text">
+              The curriculum is designed in such a way to provide a smooth
+              home-school transition for our children, as we strive to provide
+              an unparalleled learning experience in a warm, safe and supportive
+              environment.
+            </div>
+            <ul class="info-list">
+              <li>
+                <h5>Age Group:</h5>
+                <span>3 to 4 years old</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="class-details-sidebar mt-5">
+          <div class="inner-box">
+            <h3>Jr. Learners</h3>
+            <div class="text">
+              Our Jr. Learners program is designed to focus on children who have
+              grown in their independence. From being a toddler to a child
+              getting ready for Jr. Learners. The room and curriculum is
+              designed to allow your child to make this transition an easy one.
+            </div>
+            <ul class="info-list">
+              <li>
+                <h5>Age Group:</h5>
+                <span>4 to 5 years old</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="class-details-sidebar mt-5">
+          <div class="inner-box">
+            <h3>Sr. Learners</h3>
+            <div class="text">
+              Our Sr. Learners program offers children the next step to prepare
+              for educational journey. Along with educational advances your
+              child will learn how to communicate and express their thoughts in
+              an open learning environment.
+            </div>
+            <ul class="info-list">
+              <li>
+                <h5>Age Group:</h5>
+                <span>5 to 6 years old</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- class-details end -->
+
+<!-- Contact - Us -->
+<section class="contact-form-section sec-pad testimonial-style-two">
+  <div class="anim-icon">
+    <div class="icon icon-1 float-bob-y"></div>
+  </div>
+  <div class="container">
+    <div class="sec-title centred">
+      <h5>Be a part of our Enhanced Learning Education System.</h5>
+      <h1>Book your child's Free Home Demo Class.</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 form-column">
+        <div class="contact-form">
+          <form
+            id="contact-form"
+            [formGroup]="studentForm"
+            (ngSubmit)="onSubmit()"
+            class="default-form"
+          >
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Your Name*"
+                  required
+                  formControlName="name"
+                />
+                <div
+                  class=""
+                  *ngIf="Name.invalid && (Name.dirty || Name.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Name.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Student's Name*"
+                  required
+                  formControlName="studentname"
+                />
+                <div
+                  class=""
+                  *ngIf="
+                    Studentname.invalid &&
+                    (Studentname.dirty || Studentname.touched)
+                  "
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Studentname.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <select
+                  name=""
+                  id=""
+                  style="
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 60px;
+                    background: #fff;
+                    border: 3px solid #fff;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    font-size: 15px;
+                    color: #2b3c6b;
+                    transition: all 500ms ease;
+                  "
+                  formControlName="timeSlot"
+                >
+                  <option value="0" [disabled]="true">
+                    Select a Time Slot*
+                  </option>
+                  <option value="10-11">10-11</option>
+                  <option value="11-12">11-12</option>
+                  <option value="12-13">12-13</option>
+                  <option value="13-14">13-14</option>
+                  <option value="14-15">14-15</option>
+                  <option value="15-16">15-16</option>
+                  <option value="16-17">16-17</option>
+                  <option value="17-18">17-18</option>
+                </select>
+                <div
+                  class=""
+                  *ngIf="
+                    TimeSlot.invalid && (TimeSlot.dirty || TimeSlot.touched)
+                  "
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="TimeSlot.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email*"
+                  required
+                  formControlName="email"
+                />
+                <div
+                  class=""
+                  *ngIf="Email.invalid && (Email.dirty || Email.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Email.errors.required"
+                    >Field is required</small
+                  >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Email.errors.email"
+                    >Not a valid E-mail Id</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone number* "
+                  required
+                  formControlName="phoneNo"
+                />
+                <div
+                  class=""
+                  *ngIf="PhoneNo.invalid && (PhoneNo.dirty || PhoneNo.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="PhoneNo.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Alternate Phone number* "
+                  required
+                  formControlName="altPhoneNo"
+                />
+                <div
+                  class=""
+                  *ngIf="
+                    AltPhoneNo.invalid &&
+                    (AltPhoneNo.dirty || AltPhoneNo.touched)
+                  "
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="AltPhoneNo.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                <textarea
+                  name="message"
+                  placeholder="Write here your Address*"
+                  formControlName="address"
+                ></textarea>
+                <div
+                  class=""
+                  *ngIf="Address.invalid && (Address.dirty || Address.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Address.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-12 form-group mb-5">
+                <div
+                  class="alert alert-danger alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isValid"
+                >
+                  Please fill all the fields.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(1)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div
+                  class="alert alert-danger alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isError"
+                >
+                  Internal Server Error.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(2)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div
+                  class="alert alert-success alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isSuccess"
+                >
+                  Thank You! for contacting at The Learning Hub, soon our expert
+                  will get in touch with you.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(3)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+              <app-loader
+                class="col-lg-12 col-md-12 col-sm-12 centred"
+                *ngIf="isReload"
+              ></app-loader>
+
+              <div
+                class="
+                  col-lg-12 col-md-12 col-sm-12
+                  form-group
+                  message-btn
+                  centred
+                "
+              >
+                <button
+                  *ngIf="!isReload"
+                  type="submit"
+                  class="theme-btn"
+                  name="submit-form"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact - Us end -->

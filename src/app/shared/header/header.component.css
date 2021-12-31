@@ -1,0 +1,22 @@
+.dropdown:hover ul {
+  display: block !important;
+  height: 154px !important;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.dropdown ul {
+  display: none !important;
+}
+
+.mobile-menu-show-dropdown {
+  display: block;
+  transition: 500 ease-in;
+}
+
+.mobile-menu-hide-dropdown {
+  display: none;
+  transition: 500 ease-in;
+}

@@ -1,0 +1,184 @@
+<header class="main-header">
+  <div class="header-top">
+    <div class="container">
+      <div class="inner-container clearfix">
+        <div class="social-links pull-left">
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://instagram.com/thelearninghub_miraroad?r=nametag"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/thelearninghub.tlh"
+                target="_blank"
+                ><i class="fab fa-facebook-f fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-info pull-right">
+          <ul class="info-list">
+            <li>
+              <i class="fas fa-phone"></i>
+              <a class="secondTelNo" href="tel:9768075234">+91 9768075234</a>
+              &nbsp;
+              <a href="tel:91368 92346">+91 91368 92346</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@thelearninghub.org.in"
+                >info@thelearninghub.org.in</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="clearfix">
+        <div class="logo-box pull-left">
+          <figure class="logo">
+            <a routerLink="/home"
+              ><img src="../../../assets/images/logo.png" alt=""
+            /></a>
+          </figure>
+        </div>
+        <div class="nav-outer pull-right clearfix">
+          <div class="menu-area">
+            <nav class="main-menu navbar-expand-lg">
+              <div class="navbar-header">
+                <!-- Toggle Button -->
+                <button
+                  id="nav-hamburger"
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="mobileMenu" class="navbar-collapse collapse clearfix">
+                <ul class="navigation clearfix">
+                  <li routerLink="/home" routerLinkActive="current">
+                    <a>Home</a>
+                  </li>
+                  <li routerLink="/about-us" routerLinkActive="current">
+                    <a>About Us</a>
+                  </li>
+                  <li
+                    class="dropdown"
+                    routerLinkActive="current"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                  >
+                    <a>Services</a>
+                    <ul>
+                      <li routerLink="/services/teachers"><a>Teachers</a></li>
+                      <li routerLink="/services/students"><a>Students</a></li>
+                      <li routerLink="/services/courses"><a>Courses</a></li>
+                    </ul>
+                  </li>
+
+                  <li routerLink="/events" routerLinkActive="current">
+                    <a>Events</a>
+                  </li>
+                  <li routerLink="/faq" routerLinkActive="current">
+                    <a>FAQs</a>
+                  </li>
+                  <li routerLink="/contact-us" routerLinkActive="current">
+                    <a>Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sticky Header-->
+  <div class="sticky-header">
+    <div class="container clearfix">
+      <figure class="logo-box">
+        <a routerLink="/home"
+          ><img
+            style="width: 14% !important"
+            src="../../../assets/images/small-logo.png"
+            alt=""
+        /></a>
+      </figure>
+      <div class="menu-area">
+        <nav class="main-menu navbar-expand-lg">
+          <div class="navbar-header">
+            <!-- Toggle Button -->
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse clearfix">
+            <ul class="navigation clearfix" style="margin: 10px 0px !important">
+              <li routerLink="/home" routerLinkActive="current">
+                <a>Home</a>
+              </li>
+              <li routerLink="/about-us" routerLinkActive="current">
+                <a>About Us</a>
+              </li>
+              <li
+                class="dropdown"
+                routerLinkActive="current"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a>Services</a>
+                <ul>
+                  <li
+                    routerLink="/services/teachers"
+                    routerLinkActive="current"
+                  >
+                    <a>Teachers</a>
+                  </li>
+                  <li
+                    routerLinkActive="current"
+                    routerLink="/services/students"
+                  >
+                    <a>Students</a>
+                  </li>
+                  <li routerLinkActive="current" routerLink="/services/courses">
+                    <a>Courses</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li routerLink="/events" routerLinkActive="current">
+                <a>Events</a>
+              </li>
+              <li routerLink="/faq" routerLinkActive="current">
+                <a>FAQs</a>
+              </li>
+              <li routerLink="/contact-us" routerLinkActive="current">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- sticky-header end -->
+</header>

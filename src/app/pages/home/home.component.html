@@ -1,0 +1,640 @@
+<!-- main-slider -->
+<section class="main-slider style-one">
+  <div class="main-slider-carousel owl-theme nav-style-one">
+    <owl-carousel-o [options]="homeCarouselCustomOptions">
+      <ng-template carouselSlide>
+        <div
+          class="slide"
+          style="
+            background-image: url(../../../assets/images/main-slider/slider-1.jpg);
+          "
+        >
+          <div class="container">
+            <div class="content-box">
+              <h3>Best Choice</h3>
+              <h1>~Heena Ubaid</h1>
+              <div class="text">
+                Homeschooling allows you to make the curriculum fit the child,
+                rather than making the child fit the curriculum.
+              </div>
+              <div class="btn-box">
+                <a href="contact.html" class="theme-btn">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div
+          class="slide"
+          style="
+            background-image: url(../../../assets/images/main-slider/slider-2.jpg);
+          "
+        >
+          <div class="container">
+            <div class="content-box">
+              <h3>Best Choice</h3>
+              <h1>~Tamara L. Chilver</h1>
+              <div class="text">
+                Homeschooling allows you the freedom to step off the highway of
+                learning and take a more scenic route along a dirt road.
+              </div>
+              <div class="btn-box">
+                <a href="contact.html" class="theme-btn">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div
+          class="slide"
+          style="
+            background-image: url(../../../assets/images/main-slider/slider-3.jpg);
+          "
+        >
+          <div class="container">
+            <div class="content-box">
+              <h3>Best Choice</h3>
+              <h1>~John Holt</h1>
+              <div class="text">
+                Homeschooled children benefit the community because they are not
+                shaped by peers but by Experts.
+              </div>
+              <div class="btn-box">
+                <a href="contact.html" class="theme-btn">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div
+          class="slide"
+          style="
+            background-image: url(../../../assets/images/main-slider/slider-4.jpg);
+          "
+        >
+          <div class="container">
+            <div class="content-box">
+              <h3>Best Choice</h3>
+              <h1>~Heena Ubaid</h1>
+              <div class="text">
+                93% of our parents believe that their children benefited
+                academically via HOME SCHOOLING!!
+              </div>
+              <div class="btn-box">
+                <a href="contact.html" class="theme-btn">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<!-- about-section -->
+<section class="about-section">
+  <div class="anim-icon">
+    <div class="icon icon-1 float-bob-x"></div>
+    <div
+      class="icon icon-2 wow zoomIn"
+      data-wow-delay="00ms"
+      data-wow-duration="1500ms"
+    ></div>
+    <div class="icon icon-3"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+        <div
+          class="image-box wow fadeInLeft"
+          data-wow-delay="0ms"
+          data-wow-duration="1500ms"
+        >
+          <figure class="image image-1">
+            <img
+              class="img-fluid"
+              src="../../../assets/images/resource/about-1.jpg"
+              alt=""
+            />
+          </figure>
+          <figure class="image image-2">
+            <img
+              class="img-fluid"
+              src="../../../assets/images/resource/about-2.jpg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+        <div class="content-box">
+          <div class="sec-title style-two">
+            <h5>About Us</h5>
+            <h1>Welcome to THE LEARNING HUB</h1>
+          </div>
+
+          <div class="text">
+            <p>
+              THE LEARNING HUB has always focused on Learning with Difference.
+              We believe in giving Multi Dimensional Learning for all age
+              groups. It has earned its name already in the heart of many souls,
+              not only from Mumbai but from far too. We have worked with
+              learners on all kinds of platforms viz. Traditional schooling,
+              online and also on Homeschooling. We aim to remain an Outstanding
+              learning Institute where the learners enjoy learning and achieve
+              highly developed life skills for their life long learning.
+            </p>
+          </div>
+          <div class="btn-box">
+            <a routerLink="/about-us" class="theme-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about-section end -->
+
+<!-- service-section -->
+<section
+  class="service-section sec-pad"
+  style="
+    background-image: url(../../../assets/images/background/service-bg.jpg);
+  "
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12 inner-column">
+        <div class="inner-content">
+          <div class="sec-title style-two">
+            <h5>Services</h5>
+            <h1>Best Services for Kids and Teachers</h1>
+          </div>
+          <div class="text"></div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-12 col-sm-12 carousel-column">
+        <div class="carousel-content">
+          <div class="services-carousel owl-theme">
+            <owl-carousel-o [options]="servicesCarouselCustomOptions">
+              <ng-template carouselSlide [width]="297">
+                <div
+                  class="service-block-one"
+                  style="max-width: 297px !important"
+                >
+                  <div class="inner-box">
+                    <div class="icon-box">
+                      <i class="flaticon-professor"></i>
+                    </div>
+                    <h3><a routerLink="/services/teachers">Teachers</a></h3>
+                    <div class="text">
+                      THE LEARNING HUB is helping students with HOMESCHOOLING
+                      and we are hiring teachers.
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide [width]="297">
+                <div class="service-block-one" style="max-width: 297px">
+                  <div class="inner-box">
+                    <div class="icon-box"><i class="flaticon-boy"></i></div>
+                    <h3><a routerLink="/services/students">Students</a></h3>
+                    <div class="text">
+                      Most Innovative Learning Curriculum for the overall
+                      development of the student.
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template carouselSlide [width]="297">
+                <div class="service-block-one" style="max-width: 297px">
+                  <div class="inner-box">
+                    <div class="icon-box">
+                      <i class="flaticon-abc-block"></i>
+                    </div>
+                    <h3><a routerLink="/services/courses">Courses</a></h3>
+                    <div class="text">
+                      Get one on one attention in the safest environment of your
+                      own home to learn for future.
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- service-section end -->
+
+<!-- classes-section -->
+<section class="classes-section sec-pad">
+  <div class="anim-icon">
+    <div class="icon icon-1 float-bob-x"></div>
+  </div>
+  <div class="container">
+    <div class="sec-title centred">
+      <h5>Classess</h5>
+      <h1>Education for Your<br />Children</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 block-column">
+        <div
+          class="inner-block wow fadeInUp"
+          data-wow-delay="0ms"
+          data-wow-duration="1500ms"
+        >
+          <figure class="image-box">
+            <a href="class-details.html"
+              ><img
+                class="img-fluid"
+                src="../../../../assets/images/resource/class-1.jpg"
+                alt=""
+            /></a>
+          </figure>
+          <div class="lower-content">
+            <div class="link-btn">
+              <a routerLink="/services/courses"
+                ><i class="flaticon-next"></i
+              ></a>
+            </div>
+            <h3><a>Home Schooling - PreSchool</a></h3>
+
+            <div class="text">
+              Our Teacher comes home to make Learning possible at your comfort.
+            </div>
+            <ul class="info-box">
+              <li>Age: <span>2-5 Years</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 block-column">
+        <div
+          class="inner-block wow fadeInUp"
+          data-wow-delay="300ms"
+          data-wow-duration="1500ms"
+        >
+          <figure class="image-box">
+            <a href="class-details.html"
+              ><img
+                class="img-fluid"
+                src="../../../../assets/images/resource/class-2.jpg"
+                alt=""
+            /></a>
+          </figure>
+          <div class="lower-content">
+            <div class="link-btn">
+              <a routerLink="/services/courses"
+                ><i class="flaticon-next"></i
+              ></a>
+            </div>
+            <h3><a>Coding</a></h3>
+            <div class="text">
+              Learn from an Expert at the comfort of your own Home.
+            </div>
+            <ul class="info-box">
+              <li>Age: <span>6 Years+</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- classes-section end -->
+
+<!-- event-section -->
+<section
+  class="event-section"
+  style="background-image: url(../../../assets/images/background/event-bg.jpg)"
+>
+  <div class="anim-icon">
+    <div class="icon icon-1 float-bob-x"></div>
+  </div>
+  <div class="container">
+    <div class="sec-title centred">
+      <h5>Events</h5>
+      <h1>Our Events</h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-12 col-md-12 event-block mt-5">
+        <div
+          class="event-block-one wow fadeInLeft"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <figure class="image-box">
+              <a
+                ><img
+                  class="img-fluid"
+                  src="../../../assets/images/events/halloween.png"
+                  alt=""
+              /></a>
+            </figure>
+            <div class="content-box">
+              <div class="date">Oct, 2021</div>
+              <h3><a>Halloween Party.</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-12 col-md-12 event-block mt-5">
+        <div
+          class="event-block-one wow fadeInRight"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <figure class="image-box">
+              <a
+                ><img
+                  class="img-fluid"
+                  src="../../../assets/images/events/national_park.png"
+                  alt=""
+              /></a>
+            </figure>
+            <div class="content-box">
+              <div class="date">Oct, 2018</div>
+              <h3>
+                <a> A visit to Kanheri Caves and National park</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-12 col-md-12 event-block mt-5">
+        <div
+          class="event-block-one wow fadeInLeft"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <figure class="image-box">
+              <a
+                ><img
+                  class="img-fluid"
+                  src="../../../assets/images/events/Nursery_Visit.png"
+                  alt=""
+              /></a>
+            </figure>
+            <div class="content-box">
+              <div class="date">Nov, 2019</div>
+              <h3><a></a>Nursery Visit</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-12 col-md-12 event-block mt-5">
+        <div
+          class="event-block-one wow fadeInRight"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <figure class="image-box">
+              <a
+                ><img
+                  class="img-fluid"
+                  src="../../../assets/images/events/republic_day.png"
+                  alt=""
+              /></a>
+            </figure>
+            <div class="content-box">
+              <div class="date">Jan, 2019</div>
+              <h3><a>Republic Day Celebration</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- event-section end -->
+
+<!-- testimonial-faq -->
+<section class="testimonial-faq">
+  <div class="anim-icon">
+    <div class="icon icon-1"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 faq-column">
+        <div class="faq-content">
+          <div class="sec-title style-two">
+            <h5>FAQs</h5>
+            <h1>Frequntly Ask Questions</h1>
+          </div>
+          <ul class="accordion-box active-block">
+            <li class="accordion block">
+              <div class="acc-btn" (click)="onShowAccordion(1)">
+                <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                <h4>Q. Is THE LEARNING HUB a Minority School?</h4>
+              </div>
+              <div
+                class="acc-content"
+                [style.display]="accordionItemNo === 1 ? 'block' : 'none'"
+              >
+                <div class="content">
+                  <div class="text">
+                    No, we do not have minority status. It is owned and Managed
+                    by a registered Organization from the Government.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion block">
+              <div class="acc-btn" (click)="onShowAccordion(2)">
+                <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                <h4>Q. Is this an Indian Organisation?</h4>
+              </div>
+              <div
+                class="acc-content"
+                [style.display]="accordionItemNo === 2 ? 'block' : 'none'"
+              >
+                <div class="content">
+                  <div class="text">
+                    Yes, this is an Indian Organization with an International
+                    Mindedness.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion block">
+              <div class="acc-btn" (click)="onShowAccordion(3)">
+                <div class="icon-outer"><i class="fas fa-angle-down"></i></div>
+                <h4>Q. Is THE LEARNING HUB recognised/affiliated?</h4>
+              </div>
+              <div
+                class="acc-content"
+                [style.display]="accordionItemNo === 3 ? 'block' : 'none'"
+              >
+                <div class="content">
+                  <div class="text">
+                    <ul>
+                      <li>
+                        THE LEARNING HUB’s Homeschooling offers personalized
+                        learning anywhere across India with personal attention
+                        of our Efficient, Qualified, Experienced and Trained
+                        Teachers in the safest environment at your Home for your
+                        child.
+                      </li>
+                      <li>It is a Government Recognised Institute.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 testimonial-column">
+        <!-- <div class="testimonial-content">
+          <div class="sec-title style-two">
+            <h5>Testimonials</h5>
+            <h1>Happy Parents Say</h1>
+          </div>
+          <div class="inner-content">
+            <div class="client-testimonial-carousel owl-theme">
+              <owl-carousel-o [options]="testimonialCarouselCustomOptions">
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Hattie Bradly <span>/ Kids Fathre</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Jesscia Brown <span>/ Kids Mother</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Christine Eve <span>/ Kids Mother</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Hattie Bradly <span>/ Kids Fathre</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Jesscia Brown <span>/ Kids Mother</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                  <div class="testimonial-block">
+                    <div class="inner-box">
+                      <div class="author">
+                        Christine Eve <span>/ Kids Mother</span>
+                      </div>
+                      <ul class="rating">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <div class="text">
+                        Lorem ipsum dolor sit amet consectetr adipicing elit
+                        usmod tempor incidunt enim minim quis nostrud nis exer
+                        tation ullamco laboris nis aliquip commodo per
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimonial-faq end -->

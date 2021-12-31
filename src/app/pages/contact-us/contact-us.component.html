@@ -1,0 +1,255 @@
+<!--Page Title-->
+<section
+  class="page-title centred"
+  style="
+    background-image: url(../../../assets/images/background/page-title.jpg);
+  "
+>
+  <div class="container">
+    <div class="content-box">
+      <h1>Contact Us</h1>
+      <ul class="bread-crumb clearfix">
+        <li><a routerLink="/home">Home</a></li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!-- contact-info-section -->
+<section class="contact-info-section sec-pad centred">
+  <div class="container">
+    <div class="sec-title">
+      <h5>Contact</h5>
+      <h1>Get In Touch</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+        <div
+          class="single-info-box wow fadeInUp"
+          data-wow-delay="00ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <div class="icon-box"><i class="flaticon-address"></i></div>
+            <h3>Our Location</h3>
+            <div class="text">
+              Lilac CHS, JangidEnclave,<br />
+              Mira Road
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+        <div
+          class="single-info-box wow fadeInUp"
+          data-wow-delay="300ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <div class="icon-box">
+              <i class="flaticon-vintage-hand-phone"></i>
+            </div>
+            <h3>Phone Number</h3>
+            <div class="text">
+              <a href="tel:97680 75234">+91 97680 75234</a><br />
+              <a href="tel:91368 92346">+91 91368 92346</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+        <div
+          class="single-info-box wow fadeInUp"
+          data-wow-delay="600ms"
+          data-wow-duration="1500ms"
+        >
+          <div class="inner-box">
+            <div class="icon-box"><i class="flaticon-mail"></i></div>
+            <h3>Email Address</h3>
+            <div class="text">
+              <a href="mailto:info@thelearninghub.org.in"
+                >info@thelearninghub.org.in</a
+              >
+              <br />
+              <a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact-info-section end -->
+
+<!-- contact-form-section -->
+<section class="contact-form-section sec-pad">
+  <div class="container">
+    <div class="sec-title centred">
+      <h5>Have a Query?</h5>
+      <h1>Leave a Message</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12 offset-lg-2 form-column">
+        <div class="contact-form">
+          <form
+            [formGroup]="contactForm"
+            (ngSubmit)="onSubmit()"
+            id="contact-form"
+            class="default-form"
+          >
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Your Name*"
+                  formControlName="name"
+                />
+                <div
+                  class=""
+                  *ngIf="Name.invalid && (Name.dirty || Name.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Name.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email*"
+                  formControlName="email"
+                />
+                <div
+                  class=""
+                  *ngIf="Email.invalid && (Email.dirty || Email.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Email.errors.required"
+                    >Field is required</small
+                  >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="Email.errors.email"
+                    >Invalid E-mail Id</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone number*"
+                  formControlName="phoneNo"
+                />
+                <div
+                  class=""
+                  *ngIf="PhoneNo.invalid && (PhoneNo.dirty || PhoneNo.touched)"
+                >
+                  <small
+                    class="form-text text-danger"
+                    *ngIf="PhoneNo.errors.required"
+                    >Field is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input
+                  type="text"
+                  name="altPhoneNo"
+                  placeholder="Alternate Phone No"
+                  formControlName="altPhoneNo"
+                />
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                <textarea
+                  name="message"
+                  placeholder="Write here message"
+                  formControlName="message"
+                ></textarea>
+              </div>
+
+              <div class="col-12 form-group mb-5">
+                <div
+                  class="alert alert-danger alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isValid"
+                >
+                  Please fill all the fields marked as *.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(1)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div
+                  class="alert alert-danger alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isError"
+                >
+                  Internal Server Error.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(2)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div
+                  class="alert alert-success alert-dismissible fade show"
+                  role="alert"
+                  *ngIf="isSuccess"
+                >
+                  Thank You! for contacting at THE LEARNING HUB, soon our expert
+                  will get in touch with you.
+                  <button
+                    type="button"
+                    class="close"
+                    (click)="onClose(3)"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </div>
+              <app-loader
+                class="col-lg-12 col-md-12 col-sm-12 centred"
+                *ngIf="isReload"
+              ></app-loader>
+
+              <div
+                class="
+                  col-lg-12 col-md-12 col-sm-12
+                  form-group
+                  message-btn
+                  centred
+                "
+              >
+                <button
+                  *ngIf="!isReload"
+                  type="submit"
+                  class="theme-btn"
+                  name="submit-form"
+                >
+                  Submit Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact-form-section end -->
