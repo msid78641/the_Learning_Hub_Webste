@@ -72,4 +72,14 @@ export class AppService {
       { withCredentials: true }
     );
   }
+
+  bookFreeDemo(formData: { mobNo: string }) {
+    return this.http.post<{ isOk: boolean; message: string }>(
+      'https://tlh-website-api-nodejs.herokuapp.com/book-free-demo',
+      {
+        ...formData,
+      },
+      { withCredentials: true }
+    );
+  }
 }

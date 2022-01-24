@@ -622,6 +622,8 @@
   $(window).on("load", function () {
     handlePreloader();
     enableMasonry();
+    $("#staticBackdrop").modal("show");
+    // $("#staticBackdrop").show();
   });
 })(window.jQuery);
 

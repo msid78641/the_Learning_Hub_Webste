@@ -73,7 +73,6 @@ export class TeachersComponent implements OnInit, OnDestroy, AfterViewInit {
         .postTeachersContactForm({ ...this.teacherForm.value })
         .subscribe(
           (res) => {
-            console.log(res);
             this.isSuccess = true;
             this.isValid = false;
             this.isError = false;
@@ -81,7 +80,6 @@ export class TeachersComponent implements OnInit, OnDestroy, AfterViewInit {
             this.teacherForm.reset();
           },
           (err) => {
-            console.log(err);
             this.isError = true;
             this.isSuccess = false;
             this.isValid = false;

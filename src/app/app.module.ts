@@ -21,6 +21,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { LoaderComponent } from './shared/loader/loader.component';
+import { OnRefreshModalComponent } from './shared/on-refresh-modal/on-refresh-modal.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { LoaderComponent } from './shared/loader/loader.component';
     NotfoundComponent,
     FaqComponent,
     LoaderComponent,
+    OnRefreshModalComponent,
   ],
   imports: [
     BrowserModule,

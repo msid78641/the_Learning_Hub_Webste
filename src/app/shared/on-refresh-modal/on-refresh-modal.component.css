@@ -1,0 +1,9 @@
+button {
+  border: 0px;
+}
+
+.btn-primary:focus:active,
+.btn-primary:focus:focus {
+  border: 0px !important;
+  box-shadow: none !important;
+}

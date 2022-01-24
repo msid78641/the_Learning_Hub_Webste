@@ -1,10 +1,9 @@
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import * as Parallax from 'parallax-js';
+import { Title } from '@angular/platform-browser';
+import { browserRefresh } from 'src/app/app.component';
 
 declare const Parallax: any;
-
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',

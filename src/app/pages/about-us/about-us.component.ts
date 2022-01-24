@@ -1,6 +1,7 @@
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -8,14 +9,29 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements OnInit, AfterViewInit {
-  constructor(private titleService: Title) {}
+  isScrollToFounders = false;
+  constructor(
+    private titleService: Title,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this.activatedRoute.queryParams.subscribe((queryParams: Params) => {
+      this.isScrollToFounders =
+        queryParams.showFounderDetails === 'true' ? true : false;
+
+    });
+
     this.titleService.setTitle('About-us | TLH');
   }
 
   ngAfterViewInit(): void {
-    window.scroll(0, 0);
+    if (this.isScrollToFounders === true) {
+      document.querySelector('#founderSection').scrollIntoView();
+    } else {
+      
+      document.querySelector('.page-title').scrollIntoView();
+    }
   }
   testimonialCarouselCustomOptions: OwlOptions = {
     loop: true,
@@ -28,7 +44,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
     dots: false,
     navSpeed: 1000,
     margin: 0,
-    autoWidth: true,
+    autoWidth: false,
 
     responsive: {
       0: {
