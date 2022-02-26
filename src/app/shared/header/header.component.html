@@ -34,6 +34,12 @@
                 >info@thelearninghub.org.in</a
               >
             </li>
+            <li>
+              <i class="fas fa-arrow-alt-circle-right"></i>
+              <a href="https://thelearninghubportal.org/" target="_blank"
+                >Login</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -93,6 +99,24 @@
                   </li>
                   <li routerLink="/faq" routerLinkActive="current">
                     <a>FAQs</a>
+                  </li>
+                  <li
+                    class="dropdown"
+                    routerLinkActive="current"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                  >
+                    <a>Policies</a>
+                    <ul>
+                      <li routerLink="/policies/privacy-policy">
+                        <a>Privacy policy</a>
+                      </li>
+                      <li routerLink="/policies/refund-and-cancellation">
+                        <a>Refund & cancellation</a>
+                      </li>
+                      <li routerLink="/policies/terms-and-conditions">
+                        <a>Terms & conditions</a>
+                      </li>
+                    </ul>
                   </li>
                   <li routerLink="/contact-us" routerLinkActive="current">
                     <a>Contact Us</a>
@@ -170,6 +194,24 @@
               </li>
               <li routerLink="/faq" routerLinkActive="current">
                 <a>FAQs</a>
+              </li>
+              <li
+                class="dropdown"
+                routerLinkActive="current"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <a>Policies</a>
+                <ul>
+                  <li routerLink="/policies/privacy-policy">
+                    <a>Privacy policy</a>
+                  </li>
+                  <li routerLink="/policies/refund-and-cancellation">
+                    <a>Refund & cancellation</a>
+                  </li>
+                  <li routerLink="/policies/terms-and-conditions">
+                    <a>Terms & conditions</a>
+                  </li>
+                </ul>
               </li>
               <li routerLink="/contact-us" routerLinkActive="current">
                 <a>Contact Us</a>

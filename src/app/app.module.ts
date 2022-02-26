@@ -22,6 +22,10 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { LoaderComponent } from './shared/loader/loader.component';
 import { OnRefreshModalComponent } from './shared/on-refresh-modal/on-refresh-modal.component';
+import { PoliciesComponent } from './pages/policies/policies.component';
+import { PrivacyPolicyComponent } from './pages/policies/privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './pages/policies/terms-and-conditions/terms-and-conditions.component';
+import { RefundAndCancellationComponent } from './pages/policies/refund-and-cancellation/refund-and-cancellation.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +44,10 @@ import { OnRefreshModalComponent } from './shared/on-refresh-modal/on-refresh-mo
     FaqComponent,
     LoaderComponent,
     OnRefreshModalComponent,
+    PoliciesComponent,
+    PrivacyPolicyComponent,
+    TermsAndConditionsComponent,
+    RefundAndCancellationComponent,
   ],
   imports: [
     BrowserModule,

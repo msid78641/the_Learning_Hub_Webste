@@ -46,9 +46,10 @@ export class OnRefreshModalComponent implements OnInit {
           this.form.reset();
           this.isReload = false;
         },
-        (err: HttpErrorResponse) => {
+        (err) => {
+          console.log(err);
           this.isError = true;
-          this.error = err.message;
+          this.error = err;
           this.isReload = false;
         }
       );

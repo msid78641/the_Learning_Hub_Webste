@@ -10,6 +10,9 @@ import { EventsComponent } from './pages/events/events.component';
 import { StudentsComponent } from './pages/services/students/students.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { PrivacyPolicyComponent } from './pages/policies/privacy-policy/privacy-policy.component';
+import { RefundAndCancellationComponent } from './pages/policies/refund-and-cancellation/refund-and-cancellation.component';
+import { TermsAndConditionsComponent } from './pages/policies/terms-and-conditions/terms-and-conditions.component';
 
 const routes: Routes = [
   {
@@ -70,6 +73,32 @@ const routes: Routes = [
       {
         path: 'students',
         component: StudentsComponent,
+        pathMatch: 'full',
+      },
+    ],
+  },
+  {
+    path: 'policies',
+    pathMatch: 'prefix',
+    children: [
+      {
+        path: '',
+        redirectTo: '/privacy-policy',
+        pathMatch: 'full',
+      },
+      {
+        path: 'privacy-policy',
+        component: PrivacyPolicyComponent,
+        pathMatch: 'full',
+      },
+      {
+        path: 'refund-and-cancellation',
+        component: RefundAndCancellationComponent,
+        pathMatch: 'full',
+      },
+      {
+        path: 'terms-and-conditions',
+        component: TermsAndConditionsComponent,
         pathMatch: 'full',
       },
     ],
